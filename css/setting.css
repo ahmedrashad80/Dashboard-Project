@@ -1,0 +1,211 @@
+.check {
+  appearance: none;
+}
+.toggle {
+  width: 66px;
+  height: 28px;
+  border-radius: 15px;
+  background-color: #ccc;
+  position: relative;
+  box-shadow: 0 0 5px #3333332b;
+}
+.toggle::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+.check:checked + .toggle {
+  background-color: blue;
+}
+.check:checked + .toggle::after {
+  left: 40px;
+}
+/* ////////////////////////////////////////////////// */
+
+.content .data {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.content .data > div {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  position: relative;
+  gap: 15px;
+}
+.content .data .control .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+h4 {
+  margin-bottom: 8px;
+  color: #444;
+}
+p {
+  color: #666;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 100%;
+  min-height: 155px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+}
+/* end control */
+
+.general label {
+  display: block;
+  margin-bottom: 5px;
+  color: #444;
+}
+.general input[type="text"],
+.general input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.general input[type="text"]:focus,
+.general input[type="email"]:focus {
+  border-color: #1b1d1e; /* Change border color on focus if desired */
+}
+.general input[type="email"] {
+  display: inline-flex;
+  width: calc(100% - 110px);
+}
+.general a {
+  background-color: #0000ffeb;
+  color: white;
+  width: fit-content;
+  padding: 2px 7px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  margin-left: 15px;
+}
+/* end general */
+/* start security */
+.content .data .security .info {
+  padding-bottom: 15px;
+}
+.content .data .security .Password,
+.content .data .security .enable,
+.content .data .security .devices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.content .data .security .Password,
+.content .data .security .enable {
+  border-bottom: 1px solid #ccc;
+}
+
+.content .data .security a {
+  background-color: #0000ffeb;
+  color: white;
+  width: fit-content;
+  padding: 7px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  margin-left: 15px;
+}
+/* end security */
+/* start social */
+.content .data .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.social div:not(:first-child) {
+  display: flex;
+}
+.social input {
+  width: calc(100% - 60px);
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  background-color: #f6f6f6;
+}
+.social i {
+  background-color: #f6f6f6;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6666664d;
+  transition: 0.3s;
+}
+.social div:focus-within i {
+  color: black;
+}
+/* end social */
+/* start Widgets  */
+.widgets .control {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.widgets .control div input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #59575723;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 8px;
+  position: relative;
+  transition: 0.3s;
+}
+.widgets .control div input:checked {
+  background-color: rgba(0, 0, 255, 0.676);
+}
+.widgets .control div input::before {
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: white;
+  font-size: 13px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.widgets .control div label {
+  cursor: pointer;
+  font-weight: 600;
+}
+/* end Widgets  */

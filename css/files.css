@@ -1,0 +1,148 @@
+.data {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  gap: 15px;
+}
+.data .total {
+  background-color: white;
+  min-width: 260px;
+  border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
+}
+.total > div {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #cfcece;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.total > div i {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  flex: 1;
+}
+.info h5 {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.c-grey {
+  color: grey;
+}
+
+/* Size styles */
+.size {
+  font-size: 14px;
+  margin-left: auto;
+}
+
+/* Upload link styles */
+.data .total a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #2148f3;
+  color: white;
+}
+.data .total a i {
+  margin-right: 5px;
+}
+
+.data .total a:hover {
+  background-color: rgb(35, 25, 225);
+}
+.data .total a:hover i {
+  animation: up-down 0.8s linear infinite;
+}
+@keyframes up-down {
+  0%,
+  100% {
+    margin-bottom: 0px;
+  }
+  50% {
+    margin-bottom: -7px;
+  }
+}
+
+/* Additional styles */
+.c-blue {
+  color: #3498db;
+  background-color: #68b7ec6e;
+}
+
+.c-green {
+  color: #2ecc71;
+  background-color: #98f098;
+}
+.c-red {
+  color: #e74c3c;
+  background-color: #e13e3e4a;
+}
+
+.c-orange {
+  color: #f39c12;
+  background-color: #fad38b;
+}
+.data .total h2 {
+  margin-bottom: 20px;
+}
+
+.data .files {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.data .files .file {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .data {
+    flex-direction: column;
+  }
+}
+
+/* Download icon styles */
+.data .files .file .fa-download {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.data .files .file .icon {
+  text-align: center;
+  padding: 30px;
+}
+.data .files .file .icon img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+.data .files .file > p {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.data .files .file .info {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,182 @@
+.check {
+  appearance: none;
+  width: 74px;
+  height: 18px;
+  border-radius: 15px;
+  background-color: #ccc;
+  position: relative;
+  box-shadow: 0 0 5px #3333332b;
+}
+.check::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+.check:checked {
+  background-color: rgba(0, 0, 255, 0.66);
+}
+.check:checked::after {
+  left: 58px;
+}
+/* ///////////////////////////////////////////////// */
+.data {
+  display: grid;
+}
+.general {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.general .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border-right: 1px solid #77777750;
+  margin: 100px 0;
+}
+
+.general .profile .line {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 255, 0.616) 70%,
+    rgb(212, 206, 206) 70%
+  );
+  height: 5px;
+  width: 60%;
+  border-radius: 3px;
+}
+p,
+h5 {
+  color: gray;
+}
+p > span {
+  color: black;
+}
+.general img {
+  width: 120px;
+  border-radius: 50%;
+}
+.general i {
+  color: orange;
+}
+.general .info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.general .info > div {
+  padding: 15px;
+}
+.general .info > div:not(:last-child) {
+  border-bottom: 1px solid #77777750;
+}
+.general .info > div > p {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.general .info .general-info {
+  display: flex;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+.general .info .general-info p {
+  display: flex;
+  flex: 0 1 250px;
+  margin: 10px 0;
+}
+@media (max-width: 767px) {
+  .general {
+    display: flex;
+    flex-direction: column;
+  }
+  .general .profile {
+    border-bottom: 1px solid #77777750;
+    border-right: none;
+  }
+  .general .info .general-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .general .info .general-info p {
+    flex: 0;
+  }
+  .general .info > div {
+    text-align: center;
+  }
+}
+/* ////////////////////// */
+.other-data {
+  display: flex;
+  gap: 20px;
+}
+.other-data img {
+  width: 55px;
+}
+.other-data .skills-card {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+.other-data h2 {
+  margin-bottom: 10px;
+}
+.other-data p {
+  margin-bottom: 10px;
+}
+.other-data .skills-card li {
+  /* margin-bottom: 10px; */
+  padding: 15px 0;
+}
+.other-data .skills-card li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.other-data .skills-card li span {
+  background-color: #ede9e9c8;
+  border-radius: 6px;
+  margin-right: 8px;
+  padding: 0 10px;
+}
+
+.other-data .activities {
+  flex: 2;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+.other-data .activity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+}
+.other-data .activity:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+@media (max-width: 767px) {
+  .other-data {
+    flex-direction: column;
+  }
+  .other-data .skills-card li {
+    text-align: center;
+  }
+  .other-data .activity {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.other-data .activity .info {
+  flex: 1;
+}

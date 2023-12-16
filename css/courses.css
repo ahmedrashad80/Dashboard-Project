@@ -1,0 +1,65 @@
+.content .data {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding-bottom: 20px;
+}
+.content .data > div {
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 0%;
+  background-color: white;
+  position: relative;
+}
+.content .data .cover {
+  width: 100%;
+}
+
+.content .data .instructor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  border: 2px solid #fff;
+}
+.description {
+  padding: 20px;
+}
+
+.description h4 {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.description p {
+  margin: 0;
+  font-size: 16px;
+  color: #777;
+}
+.content .data .info {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  position: relative;
+}
+
+.content .data .title {
+  background-color: #0f95ef;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  top: -14px;
+  transform: translateX(-50%);
+  height: 29px;
+}
+
+.content .data .c-grey {
+  color: #777;
+}

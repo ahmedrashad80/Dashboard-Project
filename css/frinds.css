@@ -1,0 +1,105 @@
+.content .data {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding-bottom: 20px;
+}
+.content .data > div {
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: white;
+  position: relative;
+}
+.contact {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.contact i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #585757fa;
+  background-color: #f6f6f6;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+  font-size: 14px;
+}
+.frind {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.frind img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.frind h4 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.frind p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #777;
+}
+
+/* Icons styles */
+.icons {
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.icons div {
+  margin-bottom: 10px;
+}
+
+.icons div i {
+  margin-right: 5px;
+}
+.vip {
+  color: rgba(255, 0, 0, 0.208);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Info styles */
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.bg-blue {
+  background-color: #0c85d6;
+}
+
+.bg-red {
+  background-color: #e8331f;
+}
+
+.c-grey {
+  color: #777;
+}
+.content .data .info a {
+  color: white;
+  border-radius: 4px;
+  padding: 0 8px;
+  margin-right: 5px;
+}

@@ -1,0 +1,88 @@
+/* ////////////////////////////// */
+.content .data {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.content .data > div {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+
+.content .data > div .date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #777;
+}
+
+.content .data > div h4 {
+  margin: 15px 0 10px 0;
+}
+
+.content .data > div p {
+  color: #777;
+}
+
+.content .data > div .image img:not(:first-child) {
+  margin-left: -15px;
+}
+
+.content .data > div .image img {
+  width: 45px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 2px solid white;
+  position: relative;
+}
+
+.content .data > div .image img:hover {
+  z-index: 2;
+}
+
+.content .data > div ul {
+  display: flex;
+  justify-content: end;
+  border-bottom: 1px solid #77777733;
+  border-top: 1px solid #77777733;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.content .data > div li {
+  width: fit-content;
+  background-color: #77777738;
+  border-radius: 6px;
+  margin: 10px 0 10px 15px;
+  padding: 5px;
+}
+
+.content .data > div .rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .data > div .rate div {
+  width: 225px;
+  height: 8px;
+  border-radius: 5px;
+  background: #d1c9c9;
+  overflow: hidden;
+  position: relative;
+}
+
+.content .data > div .rate div span {
+  position: absolute;
+  border-radius: 5px;
+  height: 100%;
+  background: rgba(232, 57, 57, 0.811);
+}
+
+.active {
+  background-color: #77777754;
+}
